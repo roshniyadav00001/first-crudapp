@@ -1,0 +1,55 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Application</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">CRUD App</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav" style="text-align:center; margin-left:40%; ">
+    <ul class="navbar-nav mr-auto" style="word-spacing:40px ; font-size:15px;">-item
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../signup">Create</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../login">Read</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../update">Update</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../logout">Delete</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container mt-5">
+   
+</div>
+
+<!-- Bootstrap JS (optional) -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+{% block content %}
+
+
+{% endblock %}
