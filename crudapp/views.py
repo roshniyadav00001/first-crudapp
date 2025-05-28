@@ -4,7 +4,7 @@ from .forms import  customerform
 from .models import customer
 from django.contrib.auth.models import User
 from django.contrib.auth import login, logout, authenticate
-
+from django.shortcuts import get_object_or_404
 from django.contrib.auth.decorators import login_required
 
 # Create your views here.
@@ -33,6 +33,7 @@ def edit(request, id):
   return render(request, 'crudapp/update.html', context)
 
 def update(request):
+  # customerid = get_object_or_404(customerid, id=id)
   userid= request.POST.get('userid')
   customerid= request.POST.get('customerid')
   
